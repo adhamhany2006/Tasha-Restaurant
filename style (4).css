@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth
+}
+h3{
+  text-align: center;
+  padding: 25px;
+  font-family: sans-serif;
+  color: black;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+header{
+  padding: 15px;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+ul li{
+  display: inline-block;
+  padding: 10px;
+}
+ul li a{
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  transition: 0.6s;
+}
+ul li a:hover{
+  font-family: fantasy;
+  font-size: 25px;
+  color: darkred ;
+  border-bottom: solid 3px darkred;
+  transition: 0.6s;
+}
+.logos{
+  flex: 1;
+  justify-content: center;
+  align-items: center
+}
+.logo{
+  width: 90px;
+} 
+.fa-cart-shopping{
+  margin: 15px;
+  font-size: 30px;
+  color: darkred;
+  transition: 0.6s
+}
+.fa-cart-shopping:hover{
+  color: black;
+  transition: 0.6s;
+}
+.fa-magnifying-glass{
+  margin: 15px;
+  font-size: 30px;
+  transition: 0.6s
+}
+.fa-magnifying-glass:hover{
+  transition: 0.6s;
+  color: darkred;
+}
+.fa-heart{
+  margin: 15px;
+  font-size: 30px;
+  transition: 0.6s;
+}
+.fa-heart:hover{
+  color: darkred;
+  font-size: 35px
+}
+#sear{
+  padding: 7px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  outline: none;
+  width: 200px;
+  display: none;
+}
+.contant{
+  background-image: url(img/contant3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  height: 25vh;
+  justify-content: space-between;
+  align-items: center
+}
+.text-contant span{
+  margin: 15px;
+  color: snow;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.text-contant h1{
+  font-size: 70px;
+  font-family: "Freckle Face", system-ui;
+  color: darkred;
+  margin: 15px;
+}
+.text-contant p{
+  width: 450px;
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: snow;
+}
+.btn1{
+  margin: 15px;
+  background: darkred;
+  color: snow;
+  padding: 7px 8px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+.btn1:hover{
+  background: transparent;
+  color: darkred;
+  border: solid 3px darkred;
+  transition: 0.6s;
+}
+.btn2{
+  margin: 15px;
+  background: transparent;
+  color: darkred;
+  padding: 7px 8px;
+  font-size: 25px;
+  border: solid 3px darkred;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+.btn2:hover{
+  background: darkred;
+  color: snow;
+  font-family: fantasy;
+  transition: 0.6s;
+}
+.cont{
+  width: 450px;
+}
+.about{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 22vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-about span{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.text-about h2{
+  font-family: "Freckle Face", system-ui;
+  font-size: 70px;
+  color: darkred;
+  margin: 15px;
+  font-weight: bolder;
+}
+.text-about p{
+  margin-top: 25px;
+  width: 350px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+.btn-abt{
+  margin: 15px;
+  background: darkred;
+  color: snow;
+  padding: 7px 8px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+.btn-abt:hover{
+  background: transparent;
+  color: darkred;
+  border: solid 3px darkred;
+  transition: 0.6s;
+}
+.img-about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.abt{
+  width: 250px;
+  margin: 10px;
+  filter: grayscale(100%);
+  transition: 0.6s;
+  border-radius: 7px;
+}
+.abt:hover{
+  filter: none;
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+.offers{
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.text-of{
+  margin: 15px;
+  font-size: 22px;
+  color: darkred;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.textp-of{
+  width: 200px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.price-of{
+  margin: 15px;
+  color: green;
+  font-size: 22px;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+del{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: darkred;
+  font-size: 18px;
+  text-decoration: line-through
+}
+.str{
+  width: 100px;
+}
+.of{
+  width: 150px;
+}
+.videos{
+  position: relative;
+}
+video{
+  width: 100%
+}
+.text-video{
+  top: 30%;
+  left: 22%;
+  position: absolute;
+  text-align: center;
+}
+.text-video h2{
+  margin: 15px;
+  color: darkred;
+  font-family: "Freckle Face", system-ui;
+  font-size: 70px;
+}
+.text-video p{
+  width: 450px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: snow;
+  margin: auto;
+}
+.services{
+  background: #eee;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.text-srv{
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: darkred;
+  margin: 15px;
+}
+.srv{
+  width: 65px;
+  margin: 15px;
+}
+.products{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.img-product{
+  transition: 0.6s;
+  margin: 15px;
+}
+.img-product:hover{
+  transition: 0.6s;
+  transform: translate(0,-15px);
+  border: solid 3px silver;
+  border-radius: 15px;
+}
+.text-pro{
+  margin: 15px;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: darkred;
+}
+.textp-pro{
+  width: 250px;
+  margin: auto;
+  margin: 15px;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+.pri{
+  font-size: 22px;
+  color: green;
+  font-weight: bold;
+  margin: 15px;
+}
+.pro{
+  width: 200px;
+  margin-top: 10px;
+}
+.orders{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 35vh;
+  flex-direction: column;
+  background: darkred;
+}
+.text-order h2{
+  margin: 15px;
+  font-family: "Freckle Face", system-ui;
+  font-weight: bolder;
+  color: snow;
+  font-size: 70px;
+}
+.text-order p{
+  width: 450px;
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: snow;
+}
+.btn-ord{
+  margin: 15px;
+  margin-bottom: 50px;
+  background: darkgoldenrod;
+  color: snow;
+  padding: 7px 8px;
+  font-size: 25px;
+  border: solid 3px darkred;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+.btn-ord:hover{
+  background: darkred;
+  color: snow;
+  font-family: fantasy;
+  transition: 0.6s;
+}
+.ord{
+  width: 350px;
+}
+.deliverys{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+}
+.text-delivery span{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+.text-delivery h2{
+  font-family: "Freckle Face", system-ui;
+  font-size: 70px;
+  font-weight: bolder;
+  color: darkred;
+}
+.text-delivery p{
+  width: 450px;
+  margin: 15px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.btn-delv{
+  margin: 15px;
+  background: transparent;
+  color: darkred;
+  padding: 7px 8px;
+  font-size: 25px;
+  border: solid 3px darkred;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+.btn-delv:hover{
+  background: darkred;
+  color: snow;
+  font-family: fantasy;
+  transition: 0.6s;
+}
+.delv{
+  width: 400px;
+}
+.blogs{
+  background: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30vh;
+}
+.text-blog span{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: snow;
+}
+.text-blog h2{
+  padding: 10px;
+  font-family: "Freckle Face", system-ui;
+  font-weight: bolder;
+  font-size: 60px;
+  color: snow;
+}
+.blog-nav li a{
+  color: snow;
+  transition: 0.6s
+}
+.blog-nav li a:hover{
+  color: black;
+  border-bottom: solid 3px black;
+  transition: 0.6s;
+}
+.text-blog p{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 450px;
+  margin: auto;
+  color: snow;
+}
+.text-blog h4{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: snow;
+}
+.icons{
+  padding: 10px;
+  margin: 10px;
+  transition: 0.6s;
+  width: 30px;
+} 
+  
